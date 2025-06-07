@@ -31,7 +31,7 @@ body{
 .container, .game_header {
     max-width: 90%;
     width: 550px;
-    background-color: rgba(239, 252, 252, 0.9);
+    background-color: rgba(242, 252, 239, 0.9);
 }
 
 #round{
@@ -74,8 +74,7 @@ body{
 }
 .result div{
     display: flex;
-    align-items: start;
-    justify-content: center;
+    flex-direction: column;
     
     
 }
@@ -83,11 +82,33 @@ body{
     font-size: larger;
 
 }
-.score-cards{
+#computer_choice, #user_choice{
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+#declare_message{
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-style: oblique;
+
+
+}
+#score-cards{
     margin: 30px auto;
     display: flex;;
     justify-content: space-between;
+
     
+}
+
+#computerScore, #userScore{
+    font-size: 40px;
+    font-weight: bolder;
 }
 .card{
     flex-direction: column;
